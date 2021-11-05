@@ -12,8 +12,8 @@ val scalacticVersion = "3.2.9"
 val generexVersion = "1.0.2"
 
 resolvers += Resolver.jcenterRepo
-assembly/ assemblyMergeStrategy := {
-  case PathList("META-INF", xs @ _*) => MergeStrategy.discard
+assemblyMergeStrategy in assembly := {
+  case PathList("META-INF", xs@_*) => MergeStrategy.discard
   case x => MergeStrategy.first
 }
 libraryDependencies ++= Seq(
