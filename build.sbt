@@ -23,5 +23,7 @@ libraryDependencies ++= Seq(
   "org.scalatest" %% "scalatest" % scalacticVersion % Test,
   "org.scalatest" %% "scalatest-featurespec" % scalacticVersion % Test,
   "com.typesafe" % "config" % typesafeConfigVersion,
-  "com.github.mifmif" % "generex" % generexVersion
+  "com.github.mifmif" % "generex" % generexVersion,
+  "com.amazonaws" % "aws-java-sdk-s3" % "1.12.98"
+//  "jp.co.bizreach" %% "aws-s3-scala" % "0.0.14",
 )
