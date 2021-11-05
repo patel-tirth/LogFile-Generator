@@ -43,8 +43,8 @@ object GenerateLogData:
   }
 //  add the generated logs to s3 storage
   val conf  = ConfigFactory.load();
-  val storage = conf.getString("aws-s3.storage")
-  val output = conf.getString("aws-s3.log-output-path ")
+  val storage = conf.getString("randomLogGenerator.aws-s3.storage")
+  val output = conf.getString("randomLogGenerator.aws-s3.log-output-path ")
 
   val s3: AmazonS3 = AmazonS3ClientBuilder.standard.withRegion(Regions.US_EAST_1).build
   s3.putObject(storage, "logs.log", new File(output))
