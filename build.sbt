@@ -12,10 +12,10 @@ val scalacticVersion = "3.2.9"
 val generexVersion = "1.0.2"
 
 resolvers += Resolver.jcenterRepo
-assemblyMergeStrategy in assembly := {
-  case PathList("META-INF", xs@_*) => MergeStrategy.discard
-  case x => MergeStrategy.first
-}
+//assemblyMergeStrategy in assembly := {
+//  case PathList("META-INF", xs@_*) => MergeStrategy.discard
+//  case x => MergeStrategy.first
+//}
 libraryDependencies ++= Seq(
   "ch.qos.logback" % "logback-core" % logbackVersion,
   "ch.qos.logback" % "logback-classic" % logbackVersion,
