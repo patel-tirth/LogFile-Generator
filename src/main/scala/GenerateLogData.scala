@@ -18,6 +18,7 @@ import scala.util.{Failure, Success, Try}
 import com.amazonaws.services.s3.AmazonS3
 import com.amazonaws.regions.Regions
 import java.io.File
+import java.nio.file.Paths
 import com.amazonaws.services.s3.AmazonS3ClientBuilder
 
 object GenerateLogData:
