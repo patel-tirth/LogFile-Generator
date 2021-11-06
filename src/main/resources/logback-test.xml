@@ -7,12 +7,15 @@
 
 
     <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+<!--        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">-->
             <!-- Daily rollover -->
-            <fileNamePattern>log/LogFileGenerator.%d{yyyy-MM-dd}.log</fileNamePattern>
+<!--            <fileNamePattern>log/LogFileGenerator.%d{yyyy-MM-dd}.log</fileNamePattern>-->
 
-            <maxHistory>100</maxHistory>
-        </rollingPolicy>
+<!--            <maxHistory>100</maxHistory>-->
+            <file>./log/log.log</file>
+            <immediateFlush>true</immediateFlush>
+            <append>true</append>
+<!--        </rollingPolicy>-->
 
         <encoder>
             <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
