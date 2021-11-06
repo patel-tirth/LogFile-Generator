@@ -11,6 +11,7 @@
             <!-- Daily rollover -->
 <!--            <fileNamePattern>log/LogFileGenerator.%d{yyyy-MM-dd}.log</fileNamePattern>-->
             <file>./logs.log</file>
+            <append>true</append>
             <maxHistory>100</maxHistory>
         </rollingPolicy>
 
