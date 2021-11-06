@@ -10,7 +10,7 @@
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!-- Daily rollover -->
 <!--            <fileNamePattern>log/LogFileGenerator.%d{yyyy-MM-dd}.log</fileNamePattern>-->
-            <file>./outputlogs/logs.log</file>
+            <file>./outputlogs-441/logs.log</file>
             <maxHistory>100</maxHistory>
         </rollingPolicy>
 
