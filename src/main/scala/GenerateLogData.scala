@@ -47,4 +47,4 @@ object GenerateLogData:
   val output = conf.getString("randomLogGenerator.aws-s3.log-output-path ")
 
   val s3: AmazonS3 = AmazonS3ClientBuilder.standard.withRegion(Regions.US_EAST_1).build
-  s3.putObject(storage, "logs.log", new File(output))
+  s3.putObject(storage, "log.log", new File(output))
